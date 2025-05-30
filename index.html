@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joc de Padel</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #1e1e2f, #000);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      position: relative;
+    }
+    h2 {
+      color: #00eaff;
+      margin-top: 20px;
+    }
+    canvas {
+      display: block;
+      margin: 20px auto;
+      background: #111;
+      border: 3px solid #00eaff;
+      box-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
+      border-radius: 10px;
+    }
+    #resetButton {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      transform: translateY(-50%);
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #00eaff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 234, 255, 0.4);
+      transition: background-color 0.3s;
+    }
+    #resetButton:hover {
+      background-color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+  <h2>Joc de Padel</h2>
+  <canvas id="jocCanvas" width="800" height="600"></canvas>
+  <button id="resetButton" onclick="resetearJuego()">Reiniciar Partida</button>
+  <script src="script.js"></script>
+</body>
+</html>
