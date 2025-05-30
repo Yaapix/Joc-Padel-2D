@@ -179,12 +179,7 @@ const canvas = document.getElementById("jocCanvas");
         if(pregunta === "Si")
         {
           window.alert("La verdad es que no lo eres compi")
-        }
-        if (pregunta === "No")
-        {
-          window.alert("La verdad es que tienes razon")
-        }
-        else
+        }else
         {
           window.alert("Si tu lo dices...")
         }
