@@ -171,7 +171,7 @@ const canvas = document.getElementById("jocCanvas");
         }
       });
 
-      if (puntuacioEsquerra >= 1 || puntuacioDreta >= 1) {
+      if (puntuacioEsquerra >= 5 || puntuacioDreta >= 5) {
         jocAcabat = true;
         resetButton.style.display = "inline-block";
         const pregunta = prompt("¿Te crees lo suficiente mente bueno?")
